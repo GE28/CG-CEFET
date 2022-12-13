@@ -1,0 +1,1 @@
+Cada projeto está no formato HTML5/CSS/JS. Para executar basta abrir o arquivo index.html no seu navegador
