@@ -6,7 +6,7 @@ import math
 from Bottle import *
 a = 0
 
-class StanfordBunnyApp(GLAPP):
+class BottleApp(GLAPP):
 
     def setup(self):
         # Window setup
@@ -21,10 +21,10 @@ class StanfordBunnyApp(GLAPP):
         GL.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_ALPHA);
 
         # Pipeline (shaders)
-        self.pipeline = self.loadPipeline("IntensityForBunny")
+        self.pipeline = self.loadPipeline("TransparentSolid")
         GL.glUseProgram(self.pipeline)
 
-        self.bunny = StanfordBunny()
+        self.bunny = Bottle()
 
     def draw(self):
         global a
@@ -39,4 +39,4 @@ class StanfordBunnyApp(GLAPP):
         self.bunny.draw()
         a += 0.005
 
-StanfordBunnyApp()
+BottleApp()

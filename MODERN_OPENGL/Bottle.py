@@ -4,7 +4,7 @@ import ctypes
 
 scale = 10
 
-class StanfordBunny:
+class Bottle:
 
     def __init__(self):
         scale = 20
